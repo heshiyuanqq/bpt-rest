@@ -22,7 +22,7 @@ import com.cmri.bpt.web.util.PhoneCrawlerHolder;
 import com.cmri.bpt.web.util.PhoneNumberCrawler;
 
 @Restor(category = "个人信息")
-@RestMapping(value = "/v1/user", desc = "用户个人信息", method = HttpMethod.GET)
+@RestMapping(value = "/v1/user", desc = "用户个人信息", method = HttpMethod.POST)
 public class UserRestor extends RestBase {
 
 	UserService userService = SpringBeanUtil.getBean(UserService.class);
